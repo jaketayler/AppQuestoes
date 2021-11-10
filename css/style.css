@@ -1,0 +1,71 @@
+* {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.container {
+	max-width: 1440px;
+	width: 100%;
+	margin: auto;
+	border: 1px solid #999999;
+	padding: 10px;
+}
+form{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center; 
+}
+
+.quest {	
+	border: 1px solid rgb(0, 17, 94);
+	border-radius: 10px;
+	width: 200px;
+	margin: 10px;
+	padding: 10px;
+}
+
+input[type=radio]+label {
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+input[type=radio]:checked+label {
+	font-weight: bold;
+}
+
+.success {
+	background-color: rgba(117, 231, 187, 0.7);
+	border-radius: 10px;
+	padding: 2%;
+}
+
+.danger {
+	background-color: rgba(231, 117, 117, 0.7);
+	border-radius: 10px;
+	padding: 2%;
+}
+
+
+.btn {
+	background-color: #f5f5f5;
+	border-radius: 5px;
+	border: none;
+	width: auto;
+	height: 10%;
+	padding: 5%;
+	font: 18px Sans-serif;
+	cursor: pointer;
+}
+
+.btn-corretion {
+	background-color: rgb(2, 120, 216);
+	color: #F1F1F1;
+}
+
+.correct:checked + label{
+	color:rgba(117, 231, 187, 0.7);
+}
+
+.error:checked + label{
+	color:rgba(255, 78, 78, 0.7);
+}
